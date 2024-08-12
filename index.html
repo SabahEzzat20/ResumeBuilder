@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="ResumeBuilder.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="resumeNameContainer">
+        <div class="inputFileNameCont">
+            <input type="text" class="fileNameInput" autofocus>
+            <i class="fa-solid fa-check submitCheck"></i>
+        </div>
+        <div class="fileNameCont">
+            <p class="fileName">Resume</p> 
+            <i class="fa-regular fa-pen-to-square editFileNameIcon"></i>
+        </div>
+        <button class="downloadBtn"><span>Download</span> <i class="fa-solid fa-download"></i></button>
+    </div>
+    <form action="" class="personalDetailsForm">
+        <div class="titleContainer">
+            <h1>Edit personal details</h1>
+            <i class="fa-regular fa-pen-to-square editFileNameIcon"></i>
+        </div>
+        <label for="fullname">Full name</label>
+        <input name="fullname" type="text" class="fullNameInput" required placeholder="Enter your first and last name">
+
+        <label for="jobtitle">Job title</label>
+        <input name="jobtitle" type="text" class="jobTitleInput" required placeholder="Enter job title">
+
+        <label for="email">Email</label>
+        <input name="email" type="email" class="emailInput" required placeholder="Enter email">
+
+        <label for="phone">Phone</label>
+        <input name="phone" type="phone" class="phoneInput" required placeholder="Enter phone number">
+
+        <label for="address">Address</label>
+        <input name="address" type="text" class="addressInput" required placeholder="Enter your address">
+        <div class="actionsBtn">
+            <button class="cancelBtn">cancel</button>
+            <button class="saveBtn">save</button>
+        </div>
+    </form>
+    <div class="personalInfoRepresentation">
+        <h1></h1>
+        <div></div>
+        <div>
+            <i class="fa-solid fa-envelope"></i>
+            <p></p>
+        </div>
+        <div>
+            <i class="fa-solid fa-phone"></i>
+            <p></p>
+        </div>
+        <div>
+            <i class="fa-solid fa-location-dot"></i>
+            <p></p>
+        </div>
+    </div>
+    <script src="ResumeBuilder.js"></script>
+</body>
+</html>
